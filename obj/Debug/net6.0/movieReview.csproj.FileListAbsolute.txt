@@ -1,0 +1,10 @@
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.csproj.AssemblyReference.cache
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.GeneratedMSBuildEditorConfig.editorconfig
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.AssemblyInfoInputs.cache
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.AssemblyInfo.cs
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.csproj.CoreCompileInputs.cache
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.MvcApplicationPartsAssemblyInfo.cs
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.MvcApplicationPartsAssemblyInfo.cache
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.dll
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/ref/movieReview.dll
+/home/luccas/Trybe/Portfolio/MovieReview/obj/Debug/net6.0/movieReview.pdb

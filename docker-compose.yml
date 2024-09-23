@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: mcr.microsoft.com/dotnet/aspnet:6.0
+    container_name: cinecritique_webapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      MOVIE_REVIEW_CONNECTION_STRING: "Server=db;Database=MovieReview;Uid=root;Pwd=ZOujcwiwKunrakjZAbyfWmsqRHikEzjI;"
+      JWT_SECRET: "4d82a63bbdc67c1e4784ed6587f3730c"
+    depends_on:
+      - db
+    networks:
+      - cinecritique-network
+
+  db:
+    image: mysql:8.0
+    container_name: cinecritique_db
+    environment:
+      MYSQL_ROOT_PASSWORD: "your_password"
+      MYSQL_DATABASE: "MovieReview"
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - cinecritique-network
+
+networks:
+  cinecritique-network:
+    driver: bridge
+
+volumes:
+  db_data:

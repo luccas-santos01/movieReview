@@ -1,0 +1,40 @@
+# Diretórios de compilação
+bin/
+obj/
+
+# Diretórios de pacotes NuGet
+packages/
+*.nupkg
+
+# Arquivos de configuração do Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+*.sln.ide
+
+# Arquivos de logs
+*.log
+
+# Arquivos de backup
+*~ 
+*.bak
+*.swp
+
+# Arquivos de configuração do ASP.NET
+appsettings.Development.json
+appsettings.*.json
+
+# Diretórios de publicação
+publish/
+
+# Diretórios e arquivos gerados pelo Docker
+**/Dockerfile
+**/.dockerignore
+
+# Configurações de ambiente
+.env
+
+# Outros
+*.db
+*.mdb
