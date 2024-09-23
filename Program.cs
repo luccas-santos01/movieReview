@@ -5,6 +5,7 @@ using CineCritique.Repository;
 using CineCritique.Constants;
 using System.Security.Claims;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -62,6 +63,20 @@ builder.Services.AddAuthorization(options =>
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<MovieReviewContext>();
+
+    try
+    {
+        dbContext.Database.Migrate();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Erro ao aplicar migrations: {ex.Message}");
+    }
+}
 
 if (app.Environment.IsDevelopment())
 {

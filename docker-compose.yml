@@ -22,7 +22,7 @@ services:
     image: mysql:8.0
     container_name: cinecritique_db
     environment:
-      MYSQL_ROOT_PASSWORD: "your_password"
+      MYSQL_ROOT_PASSWORD: "ZOujcwiwKunrakjZAbyfWmsqRHikEzjI"
       MYSQL_DATABASE: "MovieReview"
     volumes:
       - db_data:/var/lib/mysql
